@@ -1,94 +1,92 @@
-<!DOCTYPE html>
-<html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
 <style>
+body{
+background-image: url("bg.jpg");
+}
+* {
+  font-family: Roboto, sans-serif;
+}
 
 
-body {
-  float:left;
-  background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-  width=100%;
-  font-family: Arial;
+.container {
+  width: 240px;
+  height: 500px;
+  margin: 40px 300px;
+  border-radius: 20px;
+  border: 6px solid #fff;
+  background-color: #ffffff;
 }
-#rc{
-float:left;
-border-radius: 10px;
-background: #ffffff;
-margin-top: 40px;
-margin-bottom: -30px;
-margin-left: 40px;
-margin-right: 40px;
-width:1240px;
-height:545px;
+
+.container2 {
+  width: 240px;
+  height: 500px;
+  margin: 0px 400px;
+  border-radius: 20px;
+  border: 6px solid #fff ;
+  
+background-color: #ffffff;
 }
-@media only screen and (max-width:620px) {
-body,#rc{
-width:100%;
-}}
-@media only screen and (max-width:1080px) {
-body,#rc{
-width:100%;
-}}
-h1{
-color: red;
+div.first{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    left:25vw;
+    height:500px;
+    width:250px;
+    border-radius: 30px;
+    padding: 20px;
+
 }
-p{
-font-size:18px;
-color:black;
+.content{
+width:25%;
+height:100px;
 }
-p1{
-font-size:14px;
-color:blue;
+@media screen and (max-width: 720px){
+    .body {
+       
+        display: block;
+    }
+    .body > div {
+        display: block;
+    }
+    .container {
+        max-width: 100%;
+        padding: 30px;
+        text-align: center
+    }
+    .container2 {
+        max-width: 100%;
+        padding: 30px;
+        text-align: center
+    }
+  }
+
+@media screen and (max-width: 601px)
+{
+    .container1 .container2 .body{
+        width: 70px;
+        height:100px;
+        margin-left: 2%;
+       float:left;
+    }
+
+   
 }
-p2{
-font-size:16px;
-color:black;
-}
-button{
-padding:10px;
-color:white;
-background-color:red;
--webkit-border-radius:40px;
--moz-border-radius: 40px;
-}
+
+
 </style>
 </head>
 <body>
-<h1 id="rc"><br>
-<p1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Some logo here 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<p2>Home 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-About Us 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Profile 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Contact 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button> &nbsp;&nbsp; Get Started &nbsp;&nbsp;</button>
-</p2>
 
-</p1><br><br>
- <img src="uix.jpg" align="right" style="max-width:100%;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  Hello Dribbble !
- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- Very glad to be a part of this amazing community.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- Thank you @Mo for the invitation !
- <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-June 15, 2019 
-<br><br><br>
+  <div class="first">
+<div class="content" style="position:absolute; left:1vw; top:5px;">
+<img src=ui1.jpg></img>
+  <div class="first" style="position:absolute;left:25vw;top:1px;">
+    <img src=ui2.jpg></img>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Follow &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</button>
-</p> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</h1>
-
+  </div>
+</div>
 
 </body>
 </html>
